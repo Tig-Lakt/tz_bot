@@ -15,12 +15,6 @@ router = Router()
 async def cmd_start(message: types.Message):
     """
     Обработчик команды `/start`.
-
-    Приветствует пользователя и, в зависимости от того, зарегистрирован он или нет,
-    предлагает либо перейти к основному функционалу, либо начать регистрацию.
-
-    Args:
-        message (types.Message): Объект сообщения от пользователя.
     """
     await message.answer(
                         text=start_text,
